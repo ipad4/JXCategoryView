@@ -52,6 +52,7 @@
 
     JXCategoryTitleImageCellModel *myCellModel = (JXCategoryTitleImageCellModel *)cellModel;
     myCellModel.loadImageCallback = self.loadImageCallback;
+    myCellModel.loadImageBlock = self.loadImageBlock;
     myCellModel.imageType = [self.imageTypes[index] integerValue];
     myCellModel.imageSize = self.imageSize;
     myCellModel.titleImageSpacing = self.titleImageSpacing;
